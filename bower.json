@@ -1,0 +1,22 @@
+{
+  "name": "Homeaway",
+  "version": "1.0.0",
+  "homepage": "http://artot.net",
+  "authors": [
+    "Xavier Artot <xavier@artot.net>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "assets/vendor"
+  ],
+  "dependencies": {
+    "modernizr": "2.8.2",
+    "jquery": "1.11.1",
+    "respond": "1.4.2",
+    "vivus": "~0.2.1",
+    "bootstrap-sass": "~3.3.5"
+  }
+}
