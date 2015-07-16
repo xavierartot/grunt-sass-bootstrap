@@ -89,6 +89,20 @@ module.exports = function(grunt) {
         src: 'assets/css/main.css'
       }
     },
+   imagemin: {                          // Task
+      dynamic: {                         // Another target
+        options: {                       // Target options
+          optimizationLevel: 3
+        },
+        files: [{
+          expand: true,                  // Enable dynamic expansion
+          cwd: 'assets/images/',                   // Src matches are relative to this path
+          src: ['**/*.{png,jpg,gif,svg}', '**/**/*.{png,jpg,gif,svg}', '*.{png,jpg,gif,svg}'],   // Actual patterns to match
+          //ext: '.min.js',   // Dest filepaths will have this extension.
+          dest: 'assets/images-min/'                  // Destination path prefix
+        }]
+      }
+    },
     watch: {
       sass: {
         files: [
@@ -127,12 +141,14 @@ module.exports = function(grunt) {
     'jshint',
     'sass:dev',
     'autoprefixer:dev',
+    'imagemin',
     'concat'
   ]);
   grunt.registerTask('build', [
     'jshint',
     'sass:build',
     'autoprefixer:build',
+    'imagemin',
     'uglify'
   ]);
 };
