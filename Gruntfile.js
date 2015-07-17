@@ -40,8 +40,8 @@ module.exports = function(grunt) {
     sass: {
       dev: {
         options: {                       // Target options
-          //lineNumbers: true,
-          style: 'expanded'
+          lineNumbers: true,
+          style: 'compact'
         },
         files: {
           'assets/css/main.css': 'assets/sass/main.scss'
@@ -138,11 +138,11 @@ module.exports = function(grunt) {
     'dev'
   ]);
   grunt.registerTask('dev', [
-    'jshint',
-    'sass:dev',
-    'autoprefixer:dev',
-    'imagemin',
-    'concat'
+    'newer:jshint',
+    'newer:sass:dev',
+    'newer:autoprefixer:dev',
+    'newer:imagemin',
+    'newer:concat'
   ]);
   grunt.registerTask('build', [
     'jshint',
