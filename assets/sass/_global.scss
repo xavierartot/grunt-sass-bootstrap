@@ -1,12 +1,26 @@
 body {
-  color: #000;
-  background-color: #fff;
-  padding-top: 50px;
-  padding-bottom: 20px;
+/*  color: #000;*/
+  /*background-color: #fff;*/
+  /*padding-top: 50px;*/
+  /*padding-bottom: 20px;*/
 }
 p {
-  padding-top: 50px;
-  padding: 0 50em;
-  color: #fff;
+/*  padding-top: 50px;*/
+  /*padding: 0 50em;*/
+  /*color: #fff;*/
 
 }
+
+/*http://julienmelissas.com/no-gutter-column-trick-for-bootstrap/*/
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > [class^="col-"],
+  > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+/*much better with the mixins*/
+.kitten-box { @make-sm-column(3,0); }
