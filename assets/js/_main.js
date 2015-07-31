@@ -59,7 +59,7 @@ var HomeAway = {
       //<img src="tomato.svg">
       if (!Modernizr.svg) {
         var imgs = document.getElementsByTagName('img');
-        var svgExtension = /.*\.svg$/
+        var svgExtension = /.*\.svg$/;
         var l = imgs.length;
         for(var i = 0; i < l; i++) {
           if(imgs[i].src.match(svgExtension)) {

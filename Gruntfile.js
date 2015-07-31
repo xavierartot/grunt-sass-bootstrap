@@ -89,10 +89,36 @@ module.exports = function(grunt) {
         src: 'assets/css/main.css'
       }
     },
+    responsive_images: {
+      myTask: {
+        options: {
+          sizes: [{
+            name: 'small',
+            width: 320,
+            height: 240
+          },{
+            name: 'medium',
+            width: 780
+          },{
+            name: "large",
+            width: 1140,
+            suffix: "_x2",
+            quality: 80
+          }]
+        },
+        files: [{
+          expand: true,                  // Enable dynamic expansion
+          cwd: 'assets/images/',                   // Src matches are relative to this path
+          src: ['**/*.{png,jpg,gif,svg}', '**/**/*.{png,jpg,gif,svg}', '*.{png,jpg,gif,svg}'],   // Actual patterns to match
+          //ext: '.min.js',   // Dest filepaths will have this extension.
+          dest: 'assets/images/'                  // Destination path prefix
+        }]
+      }
+    },
    imagemin: {                          // Task
       dynamic: {                         // Another target
         options: {                       // Target options
-          optimizationLevel: 3
+          optimizationLevel: 5
         },
         files: [{
           expand: true,                  // Enable dynamic expansion
@@ -141,6 +167,7 @@ module.exports = function(grunt) {
     'newer:jshint',
     'newer:sass:dev',
     'newer:autoprefixer:dev',
+    'newer:responsive_images',
     'newer:imagemin',
     'newer:concat'
   ]);
