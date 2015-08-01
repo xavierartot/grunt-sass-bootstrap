@@ -20,6 +20,7 @@ module.exports = function(grunt) {
     'assets/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js',
     'assets/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js',
     'assets/bower_components/modernizr/modernizr.js',
+    'assets/bower_components/lazy-line-painter/jquery.lazylinepainter-1.5.1.js',
     'assets/js/plugins/*.js',
     'assets/js/plugins.js',
     'assets/js/_*.js'
@@ -95,15 +96,24 @@ module.exports = function(grunt) {
           sizes: [{
             name: 'small',
             width: 320,
-            height: 240
+            quality: 100
           },{
-            name: 'medium',
-            width: 780
+            name: 'tablet',
+            width: 720,
+            quality: 100
           },{
-            name: "large",
+            name: 'desktop',
+            width: 940,
+            quality: 100
+          },{
+            name: "large-desktop",
             width: 1140,
+            quality: 100
+          }]
+            name: "large-desktop",
+            width: 2280,
             suffix: "_x2",
-            quality: 80
+            quality: 100
           }]
         },
         files: [{
