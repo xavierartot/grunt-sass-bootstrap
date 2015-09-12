@@ -1,13 +1,3 @@
-//$(function(){
-  //if (Modernizr.touch) { 
-    //console.log('Touch Screen');
-  //} else { 
-    //console.log('No Touch Screen');
-  //}
-  //if (Modernizr.svg) { 
-    //console.log('svg supported');
-  //}
- //});
 
 /* ========================================================================
  * DOM-based Routing
@@ -56,7 +46,7 @@ var HomeAway = {
          // bind to normal click, mousemove, etc
       }
 
-      //<img src="tomato.svg">
+      //<img src="tomato.svg"> fallback for svg
       if (!Modernizr.svg) {
         var imgs = document.getElementsByTagName('img');
         var svgExtension = /.*\.svg$/;

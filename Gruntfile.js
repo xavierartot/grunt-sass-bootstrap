@@ -20,7 +20,8 @@ module.exports = function(grunt) {
     'assets/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js',
     'assets/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js',
     'assets/bower_components/modernizr/modernizr.js',
-    'assets/bower_components/lazy-line-painter/jquery.lazylinepainter-1.5.1.js',
+    //'assets/bower_components/lazy-line-painter/jquery.lazylinepainter-1.5.1.js',
+    'assets/bower_components/skrollr/dist/skrollr.min.js',
     'assets/js/plugins/*.js',
     'assets/js/plugins.js',
     'assets/js/_*.js'

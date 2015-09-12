@@ -13,10 +13,12 @@
     "assets/vendor"
   ],
   "dependencies": {
-    "modernizr": "2.8.2",
+    "bootstrap-sass": "~3.3.5",
+    "enquire": "~2.1.2",
     "jquery": "1.11.1",
+    "modernizr": "2.8.2",
     "respond": "1.4.2",
-    "vivus": "~0.2.1",
-    "bootstrap-sass": "~3.3.5"
+    "skrollr": "~0.6.30",
+    "vivus": "~0.2.1"
   }
 }
