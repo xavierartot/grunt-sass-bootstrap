@@ -2,7 +2,8 @@
 
 @import '_bootstrap';
 
-@import '_global';
+@import '_global'; //mixins
+
 @import 'layout/_general';
 @import 'layout/_header';
 @import 'layout/_footer';

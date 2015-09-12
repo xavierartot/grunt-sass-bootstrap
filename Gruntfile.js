@@ -110,11 +110,6 @@ module.exports = function(grunt) {
             width: 1140,
             quality: 100
           }]
-            name: "large-desktop",
-            width: 2280,
-            suffix: "_x2",
-            quality: 100
-          }]
         },
         files: [{
           expand: true,                  // Enable dynamic expansion
