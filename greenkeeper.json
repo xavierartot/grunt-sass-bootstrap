@@ -1,0 +1,13 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "assets/bower_components/bootstrap-sass/package.json",
+        "assets/bower_components/enquire/package.json",
+        "assets/bower_components/respond/package.json",
+        "assets/bower_components/skrollr/package.json",
+        "package.json"
+      ]
+    }
+  }
+}
