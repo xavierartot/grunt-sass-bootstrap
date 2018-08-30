@@ -32,11 +32,11 @@
     "test": "grunt test --verbose"
   },
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-jasmine": "~0.4.1",
-    "grunt-contrib-jshint": "~0.3.0",
-    "grunt-contrib-uglify": "~0.2.0",
-    "grunt-contrib-watch": "~0.3.1",
-    "grunt-rigger": "~0.5.0"
+    "grunt": "^1.0.3",
+    "grunt-contrib-jasmine": "~2.0.2",
+    "grunt-contrib-jshint": "~1.1.0",
+    "grunt-contrib-uglify": "~3.4.0",
+    "grunt-contrib-watch": "~1.1.0",
+    "grunt-rigger": "~0.6.0"
   }
 }
