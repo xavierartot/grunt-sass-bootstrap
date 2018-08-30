@@ -23,8 +23,8 @@
     "url": "https://github.com/twbs/bootstrap-sass/issues"
   },
   "devDependencies": {
-    "node-sass": "~2.0",
-    "mincer": "~1.2",
-    "ejs": "~1.0"
+    "node-sass": "~4.9.3",
+    "mincer": "~1.5.1",
+    "ejs": "~2.6.1"
   }
 }
